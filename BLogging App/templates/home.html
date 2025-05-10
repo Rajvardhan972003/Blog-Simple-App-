@@ -1,0 +1,62 @@
+<!-- {% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to Simple Blog</h1>
+    <p>A simple blog application built with Flask.</p>
+    <a href="{{ url_for('register') }}" class="button">Join Now</a>
+</div>
+{% endblock %} -->
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #fff);
+    color: #333;
+  }
+
+  .container {
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+
+  .container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #555;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+
+  .button:hover {
+    background: #0056b3;
+  }
+</style>
+
+<div class="container">
+  <h1>Welcome to Simple Blog</h1>
+  <p>A simple blog application built with Flask.</p>
+  <a href="{{ url_for('register') }}" class="button">Join Now</a>
+</div>
+{% endblock %}
