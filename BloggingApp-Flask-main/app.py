@@ -1,5 +1,5 @@
 from flask import Flask, render_template, flash, redirect, url_for, session, request, logging
-#from data import Articles
+from data import Articles
 from flask_mysqldb import MySQL
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
@@ -287,6 +287,11 @@ def delete_article(id):
 
     return redirect(url_for('dashboard'))
 
+# if __name__ == '__main__':
+#     app.secret_key='secret123'
+#     app.run(debug=True)
+
 if __name__ == '__main__':
-    app.secret_key='secret123'
-    app.run(debug=True)
+    app.secret_key = 'secret123'
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
