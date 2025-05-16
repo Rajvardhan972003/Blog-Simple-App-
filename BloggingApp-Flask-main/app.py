@@ -5,7 +5,7 @@ from passlib.hash import sha256_crypt
 from functools import wraps
 
 app = Flask(__name__)
-
+ALLOWED_HOSTS=['16.171.166.22','*']
 # Config MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
