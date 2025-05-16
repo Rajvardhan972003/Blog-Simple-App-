@@ -10,7 +10,7 @@ ALLOWED_HOSTS=['16.171.166.22','*']
 app.config['MYSQL_HOST'] = 'database-1.clge0o4iowsh.eu-north-1.rds.amazonaws.com'
 app.config['MYSQL_USER'] = 'admin'
 app.config['MYSQL_PASSWORD'] = 'pratik123'
-app.config['MYSQL_DB'] = 'database'
+app.config['MYSQL_DB'] = 'flaskapp'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
 # Set secret key
